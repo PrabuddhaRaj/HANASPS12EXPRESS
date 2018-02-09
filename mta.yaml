@@ -1,0 +1,14 @@
+ID: HANASPS12EXPRESS
+_schema-version: '2.0'
+version: 0.0.1
+modules:
+  - name: web
+    type: html5
+    path: web
+    requires:
+      - name: HANA12-uaa
+resources:
+  - name: HANA12-uaa
+    type: com.sap.xs.uaa-space
+    parameters:
+      config-path: ./xs-security.json
